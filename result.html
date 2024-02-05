@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html  lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	 <title>Imba Ultimate Brain Booster</title> 
+	<meta name="description" content="Ultimate es un increíble suplemento masticable que se preocupa por tu salud y te ayuda a jugar mejor, mejorando, a su vez, tu cuerpo" />
+	<meta name="facebook-domain-verification" content="b773x7ld5e4flb3vorj94acfycwbgu" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(71580592, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/71580592" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+ <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1573451789530391');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1573451789530391&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EXTZ37SYWG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EXTZ37SYWG');
+</script>	
+</head>
+<body>	
+	<div class="menu">
+		<div class="wrapper">			
+			<div class="menu__logo menu__logo--centered"><a href="index.html"><img src="images/logo.png" alt=""/></a></div>						
+		</div>
+	</div>
+	<div class="cart">
+		<div class="wrapper">
+			<div class="cart__header">¡Gracias, tu pedido №39 se ha aceptado!</div>
+			<div class="cart__result">
+				<div class="cart__result-subheader">1. Destinatario</div>
+				<p>Nombre: <span class="rname"></span></p>
+				<p>Teléfono móvil:<span class="rphone"></span></p>
+				<div class="cart__result-subheader">2. Entrega</div>
+				<p>Ciudad:<span class="rcity"></span></p>
+				<p>Direccion:<span class="raddress"></span></p>
+				<div class="cart__result-subheader">3. producto</div>
+				<p>Potenciador cerebral <b>IMBA Ultimate</b></p>
+				<p><span class="rq"></span> piezas por <b>EUR 19.90</b></p>
+				<div class="cart__result-subheader">4. Entrega</div>
+				<p>Oficina postal</p>
+				<div class="cart__result-subheader">5. Pago</div>
+				<p>Сash a la entrega</p>
+				<div class="cart__result-subheader">TOTAL</div>
+				<p><b>EUR <span class="rsum"></span></b></p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrapper">
+			<a class="footer__copyright" href="https://imba.shop/"  target="_blank"><sup>©</sup>2020 IMBA ENERGY</a>
+			<a class="footer__link" href="https://www.instagram.com/imba_energy/" target="_blank">Estamos en instagram</a>
+		</div>
+	</div> 
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+   <script src="js/slick.js" ></script>
+   <script src="js/maskedinput.min.js" ></script>
+   <script src="js/utils.js" ></script>
+<script>
+	
+	
+	
+	/*
+	let clientData = JSON.parse(localStorage.getItem('clientData'));
+	clientData.count
+	clientData.discount
+	clientData.name
+	clientData.phone
+	clientData.city
+	clientData.address
+	clientData.comment
+	
+	*/
+	if (localStorage.getItem('uaddress')){
+		$(".raddress").text(localStorage.getItem('uaddress'));
+	}
+	if (localStorage.getItem('ucity')){
+		$(".rcity").text(localStorage.getItem('ucity'));
+	}
+	
+	$(".rname").text(localStorage.getItem('uname'));
+	$(".rphone").text(localStorage.getItem('uphone'));
+	$(".rq").text('x'+localStorage.getItem('incart'));
+	let cs = localStorage.getItem('uq');	
+	$('.rsum').html((cs*price+2).toFixed(2));	
+	window.localStorage.clear();
+</script>   
+</body>
+</html>
